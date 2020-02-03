@@ -1,0 +1,21 @@
+<h1>Onboarding form flow example</h1>
+
+<form [formGroup]="onBoardForm" (ngSubmit)="onSubmit()">
+  <div class="formControl">
+    <label for="email">Email: </label>
+
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="name@example.com"
+      formControlName="email"
+    />
+  </div>
+
+  <div class="formControl">
+    <label for="terms">I accept the Terms and Conditions: </label>
+
+    <input type="checkbox" id="terms" name="terms" formControlName="terms" />
+  </div>
+</form>
